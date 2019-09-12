@@ -11,14 +11,18 @@ $(document).ready(function (){
         $('#totalScore').text(totalScore);
 
     // set jewel variables to a random number between 1 and 12
+    
     let redJewel = Math.floor(Math.random() * 12) + 1;
     let blueJewel = Math.floor(Math.random() * 12) + 1;
     let yellowJewel = Math.floor(Math.random() * 12) + 1;
     let greenJewel = Math.floor(Math.random() * 12) + 1;
 
     //set random number between 19 and 120 at the start of the game
+
     let randomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+
     //update html to reflect the random number 
+
     $('#randomNumber').html(randomNumber);
 
 
@@ -40,9 +44,12 @@ $(document).ready(function (){
     }
 //first jewel button on click function 
     $('#redJewel').click(() => {
+
         //add value of jewel to total score
+
         totalScore = totalScore + redJewel
         //update score text
+
         $('#totalScore').text(totalScore);
         if (totalScore === randomNumber) {
             win();
@@ -57,6 +64,7 @@ $(document).ready(function (){
 
 // second jewel button on click function 
     $('#blueJewel').click(() => {
+
         //add value of jewel to total score
         totalScore = totalScore + blueJewel;
         //update score text
@@ -74,6 +82,7 @@ $(document).ready(function (){
 
 //third jewel button on click function
     $('#yellowJewel').click(() => {
+
         //add value of jewel to total score
         totalScore = totalScore + yellowJewel;
         //update score text
@@ -93,8 +102,10 @@ $(document).ready(function (){
     $('#greenJewel').click(() => {
         //add value of jewel to total score
         totalScore = totalScore + greenJewel;
+
         //update score text
         $('#totalScore').text(totalScore);
+
         if (totalScore === randomNumber) {
             win();
             reset();
