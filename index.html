@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+</head>
+<body>
+
+        <h1>Crystal Collector</h1>
+        
+    
+        <div class="gameInstructions">
+    
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+
+            <p>
+                There are four crystals below. By clicking on a crystal, you will add a specific amount
+                of points to your total score.
+            </p>
+
+            <p>
+                You win the game by matching your total score to the random number.
+                You lose the game if your score goes above the random number.
+            </p>
+
+            <p>
+                The value of each crystal is hidden from you until you click on it.
+            </p>
+
+            <p>
+                Each time the game starts, the game will change the values of each crystal.
+            </p>
+        </div>
+    
+        <div id="randomNumber"></div>
+    
+        <div id=crystalButtons>
+            <button id="redJewel"><img src="https://images-na.ssl-images-amazon.com/images/I/6124KL%2Btq%2BL._SX425_.jpg"width="200px" height="200px"></button>
+            <button id="blueJewel"><img src="https://images.prod.meredith.com/product/dbc1b1a8cf1d32bb72d1fa65ab32baeb/1526620852724/l/big-60mm-cobalt-blue-60-mm-cut-glass-crystal-giant-diamond-jewel-paperweight-gem" width="200px" height="200px"></button>
+            <button id="yellowJewel"><img src="https://www.fengshuimall.com/image/cache/original/data/wishfulfilling-jewel-yellow-wealth-luck.jpg" width="200px" height="200px" ></button>
+            <button id="greenJewel"><img src="https://cdn.shopify.com/s/files/1/2197/0803/products/OT-DIAMOND40MMGREEN.jpg?v=1547487484" width="200px" height="200px" ></button>
+        </div>
+    
+        <div class="score">
+            <div>Your total score is:</div>
+           
+            <div id="totalScore">0</div>
+        </div>
+    
+            <div class="winsandlosses">
+                <p>Wins:</p>
+                <p id="wins">0</p>
+                <p>Losses:</p>
+                <p id="losses">0</p>
+            </div>
+    
+        
+
+
+       <script src="./assets/crystal.js"></script>
+</body>
+</html>
