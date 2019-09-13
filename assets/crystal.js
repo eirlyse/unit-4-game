@@ -1,14 +1,14 @@
-$(document).ready(function (){
+$(document).ready(function () {
 
 
-        //global variables
-        let wins = 0;
-        let losses = 0; 
-        let totalScore = 0;
+    //global variables
+    let wins = 0;
+    let losses = 0;
+    let totalScore = 0;
 
 
-        //update total score text
-        $('#totalScore').text(totalScore);
+    //update total score text
+    $('#totalScore').text(totalScore);
 
     // set jewel variables to a random number between 1 and 12
 
@@ -40,7 +40,7 @@ $(document).ready(function (){
     }
 
     function loss() {
-       // loss counter 
+        // loss counter 
         losses++;
 
         // updates losses text
@@ -48,7 +48,7 @@ $(document).ready(function (){
 
         reset();
     }
-//first jewel button on click function 
+    //first jewel button on click function 
     $('#redJewel').click(() => {
 
         //add value of jewel to total score
@@ -63,7 +63,7 @@ $(document).ready(function (){
             win();
             reset();
 
-        // otherwise, the user loses    
+            // otherwise, the user loses    
 
         } else if (totalScore > randomNumber) {
             loss();
@@ -72,7 +72,7 @@ $(document).ready(function (){
         }
     });
 
-// second jewel button on click function 
+    // second jewel button on click function 
     $('#blueJewel').click(() => {
 
         //add value of jewel to total score
@@ -85,7 +85,7 @@ $(document).ready(function (){
             win();
             reset();
 
-        // otherwise, the user loses
+            // otherwise, the user loses
         } else if (totalScore > randomNumber) {
             loss();
             reset();
@@ -93,7 +93,7 @@ $(document).ready(function (){
         }
     });
 
-//third jewel button on click function
+    //third jewel button on click function
     $('#yellowJewel').click(() => {
 
         //add value of jewel to total score
@@ -109,7 +109,7 @@ $(document).ready(function (){
             win();
             reset();
 
-        // otherwise, the user loses
+            // otherwise, the user loses
         } else if (totalScore > randomNumber) {
             loss();
             reset();
@@ -117,7 +117,7 @@ $(document).ready(function (){
         }
     });
 
-// forth jewel button on click function
+    // forth jewel button on click function
     $('#greenJewel').click(() => {
 
         //add value of jewel to total score
@@ -131,7 +131,7 @@ $(document).ready(function (){
             win();
             reset();
 
-        // otherwise, the user loses    
+            // otherwise, the user loses    
         } else if (totalScore > randomNumber) {
             loss();
             reset();
