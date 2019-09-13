@@ -30,14 +30,20 @@ $(document).ready(function (){
 
 
     function win() {
+        // win counter
         wins++;
+
+        //updates wins text
         $('#wins').text(wins);
 
         reset();
     }
 
-    function lose() {
+    function loss() {
+       // loss counter 
         losses++;
+
+        // updates losses text
         $('#losses').text(losses);
 
         reset();
@@ -60,7 +66,7 @@ $(document).ready(function (){
         // otherwise, the user loses    
 
         } else if (totalScore > randomNumber) {
-            lose();
+            loss();
             reset();
 
         }
@@ -81,7 +87,7 @@ $(document).ready(function (){
 
         // otherwise, the user loses
         } else if (totalScore > randomNumber) {
-            lose();
+            loss();
             reset();
 
         }
@@ -105,7 +111,7 @@ $(document).ready(function (){
 
         // otherwise, the user loses
         } else if (totalScore > randomNumber) {
-            lose();
+            loss();
             reset();
 
         }
@@ -127,7 +133,7 @@ $(document).ready(function (){
 
         // otherwise, the user loses    
         } else if (totalScore > randomNumber) {
-            lose();
+            loss();
             reset();
 
         }

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  
@@ -16,7 +15,7 @@
         <h1>Crystal Collector</h1>
         
     
-        <div class="gameInstructions">
+        <div id="gameInstructions">
     
             <p>
                 You will be given a random number at the start of the game.
@@ -41,7 +40,7 @@
             </p>
         </div>
     
-        <div id="randomNumber"></div>
+        <h3>Random Number:</h3><h3 id="randomNumber"><h3>
     
         <div id=crystalButtons>
             <button id="redJewel"><img src="https://images-na.ssl-images-amazon.com/images/I/6124KL%2Btq%2BL._SX425_.jpg"width="200px" height="200px"></button>
@@ -50,10 +49,14 @@
             <button id="greenJewel"><img src="https://cdn.shopify.com/s/files/1/2197/0803/products/OT-DIAMOND40MMGREEN.jpg?v=1547487484" width="200px" height="200px" ></button>
         </div>
     
+
+
         <div class="score">
+
             <div>Your total score is:</div>
            
             <div id="totalScore">0</div>
+
         </div>
     
             <div class="winsandlosses">
