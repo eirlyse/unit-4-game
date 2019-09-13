@@ -11,7 +11,7 @@ $(document).ready(function (){
         $('#totalScore').text(totalScore);
 
     // set jewel variables to a random number between 1 and 12
-    
+
     let redJewel = Math.floor(Math.random() * 12) + 1;
     let blueJewel = Math.floor(Math.random() * 12) + 1;
     let yellowJewel = Math.floor(Math.random() * 12) + 1;
@@ -51,9 +51,13 @@ $(document).ready(function (){
         //update score text
 
         $('#totalScore').text(totalScore);
+
+        // if the total score is equal to the random number, the user wins
         if (totalScore === randomNumber) {
             win();
             reset();
+
+        // otherwise, the user loses    
 
         } else if (totalScore > randomNumber) {
             lose();
@@ -69,10 +73,13 @@ $(document).ready(function (){
         totalScore = totalScore + blueJewel;
         //update score text
         $('#totalScore').text(totalScore);
+
+        // if the total score is equal to the random number, the user wins
         if (totalScore === randomNumber) {
             win();
             reset();
 
+        // otherwise, the user loses
         } else if (totalScore > randomNumber) {
             lose();
             reset();
@@ -84,13 +91,19 @@ $(document).ready(function (){
     $('#yellowJewel').click(() => {
 
         //add value of jewel to total score
+
         totalScore = totalScore + yellowJewel;
+
         //update score text
+
         $('#totalScore').text(totalScore);
+
+        // if the total score is equal to the random number, the user wins
         if (totalScore === randomNumber) {
             win();
             reset();
 
+        // otherwise, the user loses
         } else if (totalScore > randomNumber) {
             lose();
             reset();
@@ -100,16 +113,19 @@ $(document).ready(function (){
 
 // forth jewel button on click function
     $('#greenJewel').click(() => {
+
         //add value of jewel to total score
         totalScore = totalScore + greenJewel;
 
         //update score text
         $('#totalScore').text(totalScore);
 
+        // if the total score is equal to the random number, the user wins
         if (totalScore === randomNumber) {
             win();
             reset();
 
+        // otherwise, the user loses    
         } else if (totalScore > randomNumber) {
             lose();
             reset();
